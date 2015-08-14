@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ToyRailsProjectForDocker::Application.config.secret_key_base = '0ab2ebfb6976d733644e5529d0a70c6a888489cb2a09088f2248d1a8e16bf521af254b9757d2feb0ceac363e09df218195a863881b83d891ed003b2fb60283c8'
+Rails.application.config.secret_key_base = ENV['SECRET_KEY_BASE']

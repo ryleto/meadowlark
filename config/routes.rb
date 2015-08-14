@@ -1,56 +1,48 @@
-ToyRailsProjectForDocker::Application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+# Route prefixes use a single letter to allow for vanity urls of two or more characters
+Rails.application.routes.draw do
+  if defined? Sidekiq
+    require 'sidekiq/web'
+    authenticate :user, lambda {|u| u.is_admin? } do
+      mount Sidekiq::Web, at: '/admin/sidekiq/jobs', as: :sidekiq
+    end
+  end
 
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin' if defined? RailsAdmin
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  # Static pages
+  match '/error' => 'pages#error', via: [:get, :post], as: 'error_page'
+  get '/terms' => 'pages#terms', as: 'terms'
+  get '/privacy' => 'pages#privacy', as: 'privacy'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  # OAuth
+  oauth_prefix = Rails.application.config.auth.omniauth.path_prefix
+  get "#{oauth_prefix}/:provider/callback" => 'users/oauth#create'
+  get "#{oauth_prefix}/failure" => 'users/oauth#failure'
+  get "#{oauth_prefix}/:provider" => 'users/oauth#passthru', as: 'provider_auth'
+  get oauth_prefix => redirect("#{oauth_prefix}/login")
 
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+  # Devise
+  devise_prefix = Rails.application.config.auth.devise.path_prefix
+  devise_for :users, path: devise_prefix,
+    controllers: {registrations: 'users/registrations', sessions: 'users/sessions',
+      passwords: 'users/passwords', confirmations: 'users/confirmations', unlocks: 'users/unlocks'},
+    path_names: {sign_up: 'signup', sign_in: 'login', sign_out: 'logout'}
+  devise_scope :user do
+    get "#{devise_prefix}/after" => 'users/registrations#after_auth', as: 'user_root'
+  end
+  get devise_prefix => redirect('/a/signup')
 
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
+  # User
+  resources :users, path: 'u', only: :show do
+    resources :authentications, path: 'accounts'
+  end
+  get '/home' => 'users#show', as: 'user_home'
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+  # Dummy preview pages for testing.
+  get '/p/test' => 'pages#test', as: 'test'
+  get '/p/email' => 'pages#email' if ENV['ALLOW_EMAIL_PREVIEW'].present?
 
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
+  get 'robots.:format' => 'robots#index'
 
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  root 'pages#home'
 end
