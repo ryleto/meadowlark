@@ -13,22 +13,13 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Logging
-  config.log_level = :debug
-  config.logger = ActiveSupport::Logger.new(STDOUT)
-  config.colorize_logging = true
-
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }
-
-  # Location of mailer previews
-  config.action_mailer.preview_path = "#{Rails.root}/test/mailers/previews"
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
-  # Raise an error on page load if there are pending migrations
+  # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
 
   # Debug mode disables concatenation and preprocessing of assets.
@@ -36,10 +27,14 @@ Rails.application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  # Asset digests allow you to set far-future HTTP expiration dates on all assets,
+  # yet still be able to expire them through the digest params.
+  config.assets.digest = true
+
   # Adds additional error checking when serving assets at runtime.
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
-  config.assets.raise_runtime_errors = false
+  config.assets.raise_runtime_errors = true
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
