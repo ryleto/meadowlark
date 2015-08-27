@@ -1211,3 +1211,18 @@ Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 173.164.44.78 at 2015-08-27 16:03:26 +0000
 Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 173.164.44.78 at 2015-08-27 21:16:23 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 6823ms (Views: 6764.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 173.164.44.78 at 2015-08-27 21:16:31 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 173.164.44.78 at 2015-08-27 21:16:31 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
