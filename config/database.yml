@@ -11,19 +11,20 @@ default: &default
   timeout: 5000
   username: root
   password: 
+  socket: /run/mysqld/mysqld.sock
 #  socket: /lib/mysql/socket/mysql.sock
   
 development:
   <<: *default
-  database: db/meadowlark_dev
+  database: meadowlark_dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/meadowlark_test
+  database: meadowlark_test
 
 production:
   <<: *default
-  database: db/meadowlark
+  database: meadowlark
