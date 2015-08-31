@@ -4874,3 +4874,108 @@ WHERE fk.referenced_column_name is not null
   AND fk.table_name = 'users'
 [0m
   [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/" for 173.164.44.78 at 2015-08-31 15:39:14 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1572ms (Views: 1555.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.self-b33e7a3e3c46867f3666869f8684e9aec0a87c91d995003d1965a250ee301c85.css?body=1" for 173.164.44.78 at 2015-08-31 15:39:17 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 173.164.44.78 at 2015-08-31 15:39:17 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 173.164.44.78 at 2015-08-31 15:39:17 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 173.164.44.78 at 2015-08-31 15:39:17 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/rails.png" for 173.164.44.78 at 2015-08-31 15:39:17 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/login" for 173.164.44.78 at 2015-08-31 15:39:22 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 275ms (Views: 272.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 173.164.44.78 at 2015-08-31 15:39:24 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 173.164.44.78 at 2015-08-31 15:39:24 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 127ms (Views: 125.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 173.164.44.78 at 2015-08-31 15:39:25 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#contact as HTML
+  Rendered static_pages/contact.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 144ms (Views: 143.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 173.164.44.78 at 2015-08-31 15:39:26 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 127ms (Views: 126.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 173.164.44.78 at 2015-08-31 15:40:38 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 173.164.44.78 at 2015-08-31 15:40:38 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/home" for 173.164.44.78 at 2015-08-31 23:01:59 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (116.1ms)
+  Rendered layouts/_footer.html.erb (13.3ms)
+Completed 200 OK in 11202ms (Views: 10642.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 173.164.44.78 at 2015-08-31 23:02:13 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 1134ms (Views: 1131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 173.164.44.78 at 2015-08-31 23:02:19 +0000
+Cannot render console from 173.164.44.78! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 113ms (Views: 112.1ms | ActiveRecord: 0.0ms)
