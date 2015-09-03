@@ -1,0 +1,18 @@
+D, [2015-09-03T03:59:23.301413 #13271] DEBUG -- :   [1m[36m (22.6ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+D, [2015-09-03T03:59:23.360867 #13271] DEBUG -- :   [1m[35m (56.0ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+D, [2015-09-03T03:59:23.362341 #13271] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-09-03T03:59:23.368013 #13271]  INFO -- : Migrating to CreateUsers (20150829235241)
+D, [2015-09-03T03:59:23.405628 #13271] DEBUG -- :   [1m[35m (34.2ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+D, [2015-09-03T03:59:23.413035 #13271] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2015-09-03T03:59:23.421918 #13271] DEBUG -- :   [1m[35mSQL (1.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150829235241')
+D, [2015-09-03T03:59:23.433087 #13271] DEBUG -- :   [1m[36m (10.8ms)[0m  [1mCOMMIT[0m
+I, [2015-09-03T03:59:23.433202 #13271]  INFO -- : Migrating to AddIndexToUsersEmail (20150903020813)
+D, [2015-09-03T03:59:23.477953 #13271] DEBUG -- :   [1m[35m (41.7ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+D, [2015-09-03T03:59:23.478805 #13271] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2015-09-03T03:59:23.483152 #13271] DEBUG -- :   [1m[35mSQL (3.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150903020813')
+D, [2015-09-03T03:59:23.493253 #13271] DEBUG -- :   [1m[36m (9.8ms)[0m  [1mCOMMIT[0m
+I, [2015-09-03T03:59:23.493380 #13271]  INFO -- : Migrating to AddPasswordDigestToUsers (20150903030716)
+D, [2015-09-03T03:59:23.581228 #13271] DEBUG -- :   [1m[35m (87.0ms)[0m  ALTER TABLE `users` ADD `password_digest` varchar(255)
+D, [2015-09-03T03:59:23.582973 #13271] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+D, [2015-09-03T03:59:23.587194 #13271] DEBUG -- :   [1m[35mSQL (3.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20150903030716')
+D, [2015-09-03T03:59:23.596740 #13271] DEBUG -- :   [1m[36m (9.2ms)[0m  [1mCOMMIT[0m
