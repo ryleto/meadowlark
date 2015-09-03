@@ -314,3 +314,506 @@ UserTest: test_name_should_not_be_too_lone
   [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
   [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
   [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36mActiveRecord::SchemaMigration Load (14.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddIndexToUsersEmail (20150903020813)
+  [1m[35m (76.0ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddIndexToUsersEmail (20150903020813)
+  [1m[35m (61.3ms)[0m  CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': CREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (4.3ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.0ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[35m (0.1ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (2.7ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 298486374)
+  [1m[36m (9.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.7ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 298486374)
+  [1m[36m (25.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (6.1ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:19', '2015-09-03 03:33:19', 298486374)
+  [1m[36m (14.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (5.1ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:20', '2015-09-03 03:33:20', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:20', '2015-09-03 03:33:20', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:20', '2015-09-03 03:33:20', 298486374)
+  [1m[36m (10.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:20', '2015-09-03 03:33:20', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:20', '2015-09-03 03:33:20', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:33:20', '2015-09-03 03:33:20', 298486374)
+  [1m[36m (3.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.7ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+  [1m[36m (9.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (5.6ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+  [1m[36m (13.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+  [1m[36m (10.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+  [1m[36m (4.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:34:08', '2015-09-03 03:34:08', 298486374)
+  [1m[36m (10.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.7ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (8.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (6.0ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (9.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.3ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (12.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (3.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (8.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (9.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (10.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (6.1ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (1.4ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (13.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (2.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (10.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:15', '2015-09-03 03:39:15', 298486374)
+  [1m[36m (9.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (2.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:16', '2015-09-03 03:39:16', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:16', '2015-09-03 03:39:16', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:16', '2015-09-03 03:39:16', 298486374)
+  [1m[36m (11.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (75.8ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 980190962)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+  [1m[36m (10.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.2ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 980190962)[0m
+  [1m[35mFixture Insert (1.4ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+  [1m[36m (8.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (37.3ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 980190962)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+  [1m[36m (10.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (1.4ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 980190962)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+  [1m[36m (10.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (2.7ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 980190962)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+  [1m[36m (9.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36mFixture Insert (2.8ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 980190962)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+Mysql2::Error: Duplicate entry 'MyString' for key 'index_users_on_email': INSERT INTO `users` (`name`, `email`, `created_at`, `updated_at`, `id`) VALUES ('MyString', 'MyString', '2015-09-03 03:39:23', '2015-09-03 03:39:23', 298486374)
+  [1m[36m (8.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `users`
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+UserTest: test_email_should_not_be_too_long
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_password_requires_minimum_length
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+UserTest: test_name_should_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+UserTest: test_name_should_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------------
+StaticPagesControllerTest: test_should_get_about
+------------------------------------------------
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.4ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.6ms)[0m  DELETE FROM `users`
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_password_requires_minimum_length
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+UserTest: test_name_should_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------------------
+UserTest: test_name_should_not_be_too_long
+------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_email_addresses_should_be_unique
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.2ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_password_requires_minimum_length
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_email_addresses_should_be_unique
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+UserTest: test_name_should_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+UserTest: test_email_should_not_be_too_long
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'meadowlark_test'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+  [1m[35m (0.3ms)[0m  SELECT @@FOREIGN_KEY_CHECKS
+  [1m[36m (0.1ms)[0m  [1mSET FOREIGN_KEY_CHECKS = 0[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `users`
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-----------------------------------------------
+UserTest: test_email_addresses_should_be_unique
+-----------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+------------------------------------------
+UserTest: test_name_should_not_be_too_long
+------------------------------------------
+  [1m[35m (0.7ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------------
+UserTest: test_email_should_not_be_too_long
+-------------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+-------------------------------------
+UserTest: test_name_should_be_present
+-------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+--------------------------------------
+UserTest: test_email_should_be_present
+--------------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+------------------------------
+UserTest: test_should_be_valid
+------------------------------
+  [1m[35m (0.1ms)[0m  ROLLBACK
