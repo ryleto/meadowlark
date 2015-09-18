@@ -15,19 +15,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <%= link_to "Home", "#", id: "logo" %>
-        <nav>
-            <ul class="nav navbar-nav navbar-right">
-                <li><%= link_to "Home", "home" %></li>
-                <li><%= link_to "About", "about" %></li>
-                <li><%= link_to "Contact", "contact" %></li>
-                <li><%= link_to "Login", "login" %></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<%= render 'layouts/header' %>
+
   <% flash.each do |message_type, message| %>
     <div class="alert alert-<%= message_type %>"><%= message %></div>
   <% end %>
@@ -35,9 +24,10 @@
 
   <%= render 'layouts/footer' %>
   <%= debug(params) if Rails.env.development? %>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/assets/javascripts/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
