@@ -3,6 +3,11 @@ meatsim:
   email: meatsim@example.com
   password_digest: <%= User.digest('password') %>
 
+caius:
+  name: Caius Cassius
+  email: cassius@example.com
+  password_digest: <%= User.digest('password') %>
+  
 <% 30.times do |n| %>
 user_<%= n %>:
   name:  <%= "User #{n}" %>
