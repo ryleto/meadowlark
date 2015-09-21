@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   
   # user routes
   resources :users
+  resources :account_activations, only: [:edit]
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
