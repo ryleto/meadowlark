@@ -1,3 +1,9 @@
+rjleto:
+  name: Ryan Leto
+  email: rjleto@example.com
+  password_digest: <%= User.digest('password') %>
+  admin: true
+  
 meatsim:
   name: Meat Sim
   email: meatsim@example.com
