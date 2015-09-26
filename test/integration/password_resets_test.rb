@@ -47,15 +47,15 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     # Invalid password & confirmation
     patch password_reset_path(user.reset_token),
           email: user.email,
-          user: { password:              "foobaz",
-                  password_confirmation: "barquux" }
+          user: { password:              "incorrect",
+                  password_confirmation: "alsoincorrect" }
     assert_select 'div#error_explanation'
     
     # Empty password
     patch password_reset_path(user.reset_token),
           email: user.email,
-          user: { password:              "",
-                  password_confirmation: "" }
+          user: { password:              "incorrect",
+                  password_confirmation: "alsoincorrect" }
     assert_select 'div#error_explanation'
     
     # Valid password & confirmation
