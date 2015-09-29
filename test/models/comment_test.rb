@@ -3,7 +3,7 @@ require 'test_helper'
 class CommentTest < ActiveSupport::TestCase
   def setup
     @user = users(:rjleto)
-    @comment = Comment.new(content: "some random comment", user_id: @user.id)
+    @comment = @user.comments.build(content: "some random comment")
   end
   
   test "comment should be valid" do
