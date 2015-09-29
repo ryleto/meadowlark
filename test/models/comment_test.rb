@@ -14,4 +14,15 @@ class CommentTest < ActiveSupport::TestCase
     @comment.user_id = nil
     assert_not @comment.valid?
   end
+  
+  test "content should be present" do
+    @comment.content = "   "
+    assert_not @comment.valid?
+  end
+
+  test "content should be at most 140 characters" do
+    @comment.content = "a" * 141
+    assert_not @comment.valid?
+  end
+
 end
