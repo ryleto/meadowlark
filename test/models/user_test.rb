@@ -2,7 +2,7 @@ require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
   def setup
-    @user = User.new(name: "Demo User", email:"user@example.com", password: "secret", password_confirmation: "secret")
+    @user = User.new(name: "Tesr User", email:"test.user@example.com", password: "secret", password_confirmation: "secret")
   end
   
   test "should be valid" do
@@ -43,5 +43,13 @@ class UserTest < ActiveSupport::TestCase
   
   test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?(:remember, '')
+  end
+  
+  test "associated comments should be destroyed with user" do
+    @user.save
+    @user.comments.create!(content: "some random comment")
+    assert_difference 'Comment.count', -1 do
+      @user.destroy
+    end
   end
 end
