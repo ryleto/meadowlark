@@ -3,11 +3,21 @@
 one:
   content: "When you reach a fork in the road, take it."
   created_at: <%= 10.minutes.ago.to_datetime %>
+  user: rjleto
 
 two:
   content: "Ninety percent of everything you do in life is half mental."
   created_at: <%= 45.minutes.ago.to_datetime %>
+  user: meatsim
   
 most_recent:
   content: "Unit testing... one, two, three"
   created_at: <%= Time.zone.now.to_datetime %>
+  user: caius
+  
+<% 30.times do |n| %>
+comment_<%= n %>:
+  content: <% Faker::Lorem.sentence(5) %>
+  created_at: <%= 45.days.ago.to_datetime %>
+  user: rjleto
+<% end %>
