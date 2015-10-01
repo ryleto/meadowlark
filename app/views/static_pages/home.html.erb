@@ -1,3 +1,16 @@
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="comment_form">
+        <%= render 'shared/comment_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -117,3 +130,5 @@
         </div>
       </div>
       <!-- /END THE FEATURETTES -->
+
+<% end %>
