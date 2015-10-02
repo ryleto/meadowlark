@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
             flash[:success] = "Comment submitted!"
             redirect_to root_url
         else
+            @feed_items = []
             render 'static_pages/home'
         end
     end
