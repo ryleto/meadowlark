@@ -77,7 +77,7 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     patch password_reset_path(@user.reset_token),
       email: @user.email,
       user: { password: "secret", password_confirmation: "secret" }
-    assert_response :redirect_to
+    assert_response :redirect
     follow_redirect!
     #assert_match //i, response.body
   end
