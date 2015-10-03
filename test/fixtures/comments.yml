@@ -6,7 +6,7 @@ one:
   user: rjleto
 
 two:
-  content: "Ninety percent of everything you do in life is half mental."
+  content: "Ninety percent of everything is half mental."
   created_at: <%= 45.minutes.ago.to_datetime %>
   user: meatsim
   
