@@ -22,7 +22,7 @@ class CommentsController < ApplicationController
     private
 
         def comment_params
-          params.require(:comment).permit(:content, :picture)
+          params.require(:comment).permit(:content, :image)
         end
         
         def correct_user

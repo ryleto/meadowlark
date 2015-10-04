@@ -276,7 +276,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.3.5)
   bootstrap-will_paginate (~> 0.0.10)
   byebug
-  carrierwave
+  carrierwave (~> 0.10.0)
   coffee-rails (~> 4.1.0)
   faker (~> 1.5.0)
   fog (~> 1.34.0)
