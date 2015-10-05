@@ -32,18 +32,4 @@ class CommentsInterfaceTest < ActionDispatch::IntegrationTest
     get user_path(users(:meatsim))
     assert_select 'a', text: 'delete', count: 0
   end
-  
-  test "comment sidebar count" do
-    log_in_as(@user)
-    get root_path
-    assert_match "Comments.count", response.body
-    # User with zero comments
-    other_user = users(:caius)
-    log_in_as(other_user)
-    get root_path
-    assert_match "0 comments", response.body
-    other_user.comments.create!(content: "A comment")
-    get root_path
-    assert_match 'Comment.count', response.body
-  end
 end
