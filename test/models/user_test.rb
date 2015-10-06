@@ -52,4 +52,15 @@ class UserTest < ActiveSupport::TestCase
       @user.destroy
     end
   end
+  
+  test "should follow and unfollow a user" do
+    rjleto = users(:rjleto)
+    meatsim = users(:meatsim)
+    assert_not rjleto.following?(meatsim)
+    rjleto.follow(meatsim)
+    assert rjleto.following?(meatsim)
+    assert meatsim.followers.include?(rjleto)
+    rjleto.unfollow(meatsim)
+    assert_not rjleto.following?(meatsim)
+  end
 end
