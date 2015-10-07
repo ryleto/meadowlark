@@ -1,1 +1,15 @@
-# empty
+one:
+  follower: rjleto
+  followed: meatsim
+
+two:
+  follower: rjleto
+  followed: caius
+
+three:
+  follower: meatsim
+  followed: rjleto
+
+four:
+  follower: caius
+  followed: rjleto
