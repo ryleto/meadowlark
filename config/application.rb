@@ -32,6 +32,9 @@ module Workspace
         env.cache = ActiveSupport::Cache.lookup_store(:memory_store)
       end
     end
+    
+    # Include the authenticity token in remote forms.
+    config.action_view.embed_authenticity_token_in_remote_forms = true
   end
 end
 
