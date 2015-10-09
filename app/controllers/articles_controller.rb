@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-    before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+    before_action :logged_in_user, only: [:index, :show, :edit, :update, :destroy]
     
     def index
         @articles = Article.paginate(page: params[:page])
