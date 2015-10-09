@@ -20,9 +20,10 @@ Rails.application.routes.draw do
     end
   end
 
-  # user routes
+  # RESTful
   resources :account_activations, only: [:edit]
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :comments, only: [:create, :destroy]
   resources :relationships, only: [:create, :destroy]
+  resources :articles
 end
