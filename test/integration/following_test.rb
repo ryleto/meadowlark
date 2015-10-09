@@ -3,6 +3,7 @@ require 'test_helper'
 class FollowingTest < ActionDispatch::IntegrationTest
   def setup
     @user = users(:rjleto)
+    @user = users(:meatsim)
     log_in_as(@user)
   end
 
