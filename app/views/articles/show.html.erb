@@ -1,0 +1,22 @@
+<% provide(:title, "Read Article") %>
+<div class="row">
+    <div class="col-md-8">
+    <h1>
+        <%= @article.title %>
+    </h1>
+    <% @article.pubdate %>
+    
+    <section>
+      <p>
+        <%= @article.body %>
+      </p>
+    </section>
+    <br>
+
+    <%= link_to "View Source", @article.source, class: "btn btn-default pull-right", target: "_blank" %>
+    <%= link_to "Edit", edit_article_path(@article), class: "btn btn-default pull-right" %>
+    </div>
+    <aside class="col-md-4">
+        <h4>Related Items</h4>
+    </aside>
+</div>
