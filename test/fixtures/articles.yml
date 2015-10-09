@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pubdate: 1
+  title: MyString
+  body: MyText
+  source: MyString
+  publish: 1
+
+two:
+  pubdate: 1
+  title: MyString
+  body: MyText
+  source: MyString
+  publish: 1
