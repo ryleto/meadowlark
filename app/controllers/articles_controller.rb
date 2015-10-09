@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
         @article = Article.new(article_params)
         if @article.save
           flash[:info] = "Thank you. Your article has been posted."
-          redirect_to @article
+          redirect_to articles_path
         else
           render 'new'
         end
@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
     private
     
         def article_params
-          params.require(:user).permit(:pubdate, :title, :body, :source, :publish)
+          params.require(:article).permit(:pubdate, :title, :body, :source, :publish)
         end
 end
 
