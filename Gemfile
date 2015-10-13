@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'will_paginate', '~> 3.0.7'
+gem 'active_link_to', '~> 1.0.3'
 
 group :development, :test do
   gem 'byebug'
