@@ -3,12 +3,13 @@ Rails.application.routes.draw do
   # static page routes
   root                'static_pages#home'
   get    'about'   => 'static_pages#about'
-  get    'contact' => 'static_pages#contact'
   get    'news'    => 'static_pages#news'
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+  get 'contact', to: 'messages#new', as: 'contact'
+  post 'contact', to: 'messages#create'
   
   get 'password_resets/new'
   get 'password_resets/edit'

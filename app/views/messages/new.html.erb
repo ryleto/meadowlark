@@ -1,0 +1,32 @@
+<% provide(:title, 'Contact') %>
+<h1>Contact Us</h1>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_for @message, url: contact_path do |message_form| %>
+      <fieldset>
+        <div class="field">
+          <%= message_form.text_field :name, placeholder: "Name", class: 'form-control' %>
+        </div><br>
+        
+        <div class="field">
+          <%= message_form.text_field :company, placeholder: "Company", class: 'form-control' %>
+        </div><br>
+        
+        <div class="field">
+          <%= message_form.email_field :email, placeholder: "Email Address", class: 'form-control' %>
+        </div><br>
+        
+        <div class="field">
+          <%= message_form.text_area :content,placeholder: "Your Message", size: "25x6", class: 'form-control' %>
+        </div><br>
+      </fieldset>
+      
+      <fieldset>
+        <div class="field">
+          <%= message_form.submit "Send", class: "btn btn-primary" %>
+        </div>
+      </fieldset>
+    <% end %>
+  </div>
+</div>

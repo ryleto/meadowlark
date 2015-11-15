@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009012357) do
+ActiveRecord::Schema.define(version: 20151114233333) do
 
   create_table "articles", force: :cascade do |t|
     t.integer  "pubdate",    limit: 4
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(version: 20151009012357) do
 
   add_index "comments", ["user_id", "created_at"], name: "index_comments_on_user_id_and_created_at", using: :btree
   add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
+
+  create_table "messages", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "relationships", force: :cascade do |t|
     t.integer  "follower_id", limit: 4
