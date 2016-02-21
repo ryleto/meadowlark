@@ -4,6 +4,7 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <%= form_for @message, url: contact_path do |message_form| %>
+      <%= render 'shared/error_messages', object: message_form.object %>
       <fieldset>
         <div class="field">
           <%= message_form.text_field :name, placeholder: "Name", class: 'form-control' %>
