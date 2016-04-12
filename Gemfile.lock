@@ -95,7 +95,7 @@ GEM
     mysql2 (0.3.20)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    puma (2.13.4)
+    puma (3.4.0)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -172,21 +172,21 @@ PLATFORMS
 DEPENDENCIES
   active_link_to (~> 1.0.3)
   bcrypt
-  bootstrap-sass (~> 3.3.5)
+  bootstrap-sass (~> 3.3, >= 3.3.6)
   bootstrap-will_paginate (~> 0.0.10)
   byebug
   carrierwave (~> 0.10.0)
-  coffee-rails (~> 4.1.0)
+  coffee-rails (~> 4.1, >= 4.1.1)
   faker (~> 1.5.0)
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks (~> 2.1.0)
   mini_magick (~> 4.3.5)
   mysql2 (~> 0.3.20)
-  puma (~> 2.13.4)
+  puma (~> 3.4)
   rails (= 4.2.6)
   rails_12factor (= 0.0.2)
-  sass-rails (>= 3.2)
+  sass-rails (~> 5.0, >= 5.0.4)
   sdoc (~> 0.4.0)
   spring
   turbolinks
