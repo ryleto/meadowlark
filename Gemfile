@@ -2,21 +2,21 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'bcrypt'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'bootstrap-will_paginate', '~> 0.0.10'
-gem 'carrierwave', '~> 0.10.0'
-gem 'coffee-rails', '~> 4.1', '>= 4.1.1'
-gem 'faker', '~> 1.5.0'
-gem 'jbuilder', '~> 2.0'
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
+gem 'carrierwave'
+gem 'coffee-rails'
+gem 'faker'
+gem 'jbuilder'
 gem 'jquery-rails'
-gem 'jquery-turbolinks', '~> 2.1.0'
-gem 'mini_magick', '~> 4.3.5'
+gem 'jquery-turbolinks'
+gem 'mini_magick'
 gem 'mysql2', '~> 0.3.20'
-gem 'sass-rails', '~> 5.0', '>= 5.0.4'
-gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'active_link_to', '~> 1.0.3'
+gem 'active_link_to'
 
 group :development, :test do
   gem 'byebug'
@@ -25,6 +25,6 @@ group :development, :test do
 end
 
 group :production do
-  gem 'rails_12factor', '0.0.2'
+  gem 'rails_12factor'
   gem 'puma', '~> 3.4'
 end
