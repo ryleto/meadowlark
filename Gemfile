@@ -18,7 +18,7 @@ gem 'puma', '~> 3.4'
 gem 'sass-rails'
 gem 'uglifier'
 gem 'turbolinks'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc'
 
 group :development, :test do
   gem 'byebug'
