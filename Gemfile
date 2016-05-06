@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
+gem 'mysql2', '~> 0.3.20'
 
 gem 'active_link_to'
 gem 'bcrypt'
@@ -13,12 +14,11 @@ gem 'jbuilder'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'mini_magick'
-gem 'mysql2', '~> 0.3.20'
-gem 'puma', '~> 3.4'
+gem 'puma'
 gem 'sass-rails'
-gem 'uglifier'
-gem 'turbolinks'
 gem 'sdoc'
+gem 'turbolinks'
+gem 'uglifier'
 
 group :development, :test do
   gem 'byebug'

@@ -184,7 +184,7 @@ DEPENDENCIES
   jquery-turbolinks
   mini_magick
   mysql2 (~> 0.3.20)
-  puma (~> 3.4)
+  puma
   rails (= 4.2.6)
   rails_12factor
   sass-rails
