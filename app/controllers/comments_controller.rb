@@ -5,8 +5,7 @@ class CommentsController < ApplicationController
     def create
         @comment = current_user.comments.build(comment_params)
         if @comment.save
-            flash[:success] = "Comment submitted!"
-            redirect_to root_url
+            redirect_to root_url, notice: "Comment posted"
         else
             @feed_items = []
             render 'static_pages/home'
@@ -15,8 +14,7 @@ class CommentsController < ApplicationController
 
     def destroy
         @comment.destroy
-        flash[:success] = "Comment deleted"
-        redirect_to request.referrer || root_url
+        redirect_to request.referrer || root_url, notice: "Comment deleted"
     end
     
     private
