@@ -16,8 +16,7 @@ class ArticlesController < ApplicationController
     def create
         @article = Article.new(article_params)
         if @article.save
-          flash[:info] = "Thank you. Your article has been posted."
-          redirect_to articles_path
+          redirect_to articles_path, notice: "Thank you. Your article has been posted."
         else
           render 'new'
         end
