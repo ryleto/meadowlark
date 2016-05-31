@@ -13,8 +13,7 @@ class PasswordResetsController < ApplicationController
       @user.send_password_reset_email
       redirect_to root_url, notice: "Email sent with password reset instructions"
     else
-      flash.now[:danger] = "Email address not found"
-      render 'new'
+      render 'new', alert: "Email address not found"
     end
   end
   
@@ -60,8 +59,7 @@ class PasswordResetsController < ApplicationController
     # Checks expiration of reset token
     def check_expiration
       if @user.password_reset_expired?
-        flash[:danger] = "Password reset has expired."
-        redirect_to new_password_reset_url
+        redirect_to new_password_reset_url, alert: "Password reset has expired."
       end
     end
 end
