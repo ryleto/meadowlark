@@ -56,8 +56,7 @@ class UsersController < ApplicationController
     def logged_in_user
       unless logged_in?
         store_location
-        flash[:danger] = 'You must log in first to continue'
-        redirect_to login_url
+        redirect_to login_url, alert: 'You must log in first to continue'
       end
     end
     
