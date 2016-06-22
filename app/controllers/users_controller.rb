@@ -50,8 +50,6 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
     
-    # before actions
-    
     # confirms user is logged in
     def logged_in_user
       unless logged_in?
