@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.6'
 gem 'mysql2', '~> 0.3.20'
-
 gem 'active_link_to'
 gem 'bcrypt'
 gem 'bootstrap-sass'
