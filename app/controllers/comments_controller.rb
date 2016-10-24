@@ -14,7 +14,7 @@ class CommentsController < ApplicationController
 
     def destroy
         @comment.destroy
-        redirect_to request.referrer || root_url, notice: "Comment deleted"
+        redirect_to request.referrer || root_url, alert: "Comment deleted"
     end
     
     private
