@@ -18,6 +18,7 @@ gem 'sass-rails'
 gem 'sdoc'
 gem 'turbolinks'
 gem 'uglifier'
+gem 'unobtrusive_flash', '>=3'
 
 group :development, :test do
   gem 'byebug'
